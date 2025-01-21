@@ -14,9 +14,8 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1000, // Increase chunk size warning limit to 1000 kB
-    outDir: 'dist', // Ensure the build output goes to `dist/` directory
+    outDir: 'dist', // This is the default output folder
     rollupOptions: {
-      // Optional: Customize manual chunking to split large dependencies
       output: {
         manualChunks(id) {
           if (id.includes("node_modules")) {
