@@ -13,7 +13,6 @@ export default defineConfig({
     port: 3000,
   },
   build: {
-    outDir: "dist", // This specifies the output directory as "dist"
     chunkSizeWarningLimit: 1000, // Increase chunk size warning limit to 1000 kB
     rollupOptions: {
       // Optional: Customize manual chunking to split large dependencies
