@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     chunkSizeWarningLimit: 1000, // Increase chunk size warning limit to 1000 kB
-    outDir: 'dist', // This is the default output folder
+    outDir: 'dist', // The output folder is dist
     rollupOptions: {
       output: {
         manualChunks(id) {
